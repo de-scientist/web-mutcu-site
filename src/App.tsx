@@ -8,7 +8,7 @@ import Events from "./pages/Events";
 import Resources from "./pages/Resources";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
-// src/App.tsx (add at top with other imports)
+
 import Chairman from "./pages/committees/Chairman";
 import ViceChair1 from "./pages/committees/ViceChair1";
 import ViceChair2 from "./pages/committees/ViceChair2";
@@ -85,7 +85,7 @@ const App: React.FC = () => {
           element={<TechnicalDepartment />}
         />
         <Route path="/ministries/RMC" element={<RMC />} />
-        {/* You can add sub-routes here for committees/* and ministries/* pages */}
+       
       </Route>
     </Routes>
   );
