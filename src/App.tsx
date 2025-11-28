@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Ministries from "./pages/Ministries";
 import Events from "./pages/Events";
-import Resources from "./pages/Resources";";
+import Resources from "./pages/Resources";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 // src/App.tsx (add at top with other imports)
