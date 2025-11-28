@@ -22,6 +22,16 @@ import MusicCommittee from "./pages/committees/MusicCommittee";
 import TechnicalCommittee from "./pages/committees/TechnicalCommittee";
 import CreativeCommittee from "./pages/committees/CreativeCommittee";
 
+import MusicMinistry from "./pages/ministries/MusicMinistry";
+import BibleStudyDiscipleship from "./pages/ministries/BibleStudyDiscipleship";
+import MissionsEvangelism from "./pages/ministries/MissionsEvangelism";
+import CreativeArts from "./pages/ministries/CreativeArts";
+import PrayerMinistry from "./pages/ministries/PrayerMinistry";
+import WelfareCommittee from "./pages/ministries/WelfareCommittee";
+import HospitalityMinistry from "./pages/ministries/HospitalityMinistry";
+import TechnicalDepartment from "./pages/ministries/TechnicalDepartment";
+import RMC from "./pages/ministries/RMC";
+
 const App: React.FC = () => {
   return (
     <Routes>
