@@ -7,7 +7,9 @@ declare const bootstrap: any;
 const MusicMinistry: React.FC = () => {
   useEffect(() => {
     // Form submission handler for join ministry modal (mirrors music-ministry.js logic)
-    const form = document.getElementById("musicMinistryJoinForm") as HTMLFormElement | null;
+    const form = document.getElementById(
+      "musicMinistryJoinForm",
+    ) as HTMLFormElement | null;
     const handleSubmit = (e: Event) => {
       e.preventDefault();
       const formEl = e.currentTarget as HTMLFormElement;
@@ -20,9 +22,12 @@ const MusicMinistry: React.FC = () => {
       // Simulate submission
       console.log("Music Ministry Join Form Submitted:", {
         name: (document.getElementById("joinName") as HTMLInputElement)?.value,
-        email: (document.getElementById("joinEmail") as HTMLInputElement)?.value,
-        interest: (document.getElementById("joinInterest") as HTMLSelectElement)?.value,
-        message: (document.getElementById("joinMessage") as HTMLTextAreaElement)?.value,
+        email: (document.getElementById("joinEmail") as HTMLInputElement)
+          ?.value,
+        interest: (document.getElementById("joinInterest") as HTMLSelectElement)
+          ?.value,
+        message: (document.getElementById("joinMessage") as HTMLTextAreaElement)
+          ?.value,
       });
 
       // Show confirmation message
@@ -58,7 +63,9 @@ const MusicMinistry: React.FC = () => {
           data-aos-duration="1000"
         >
           <h1 className="display-3 mb-3">MUTCU Music Ministry</h1>
-          <p className="lead">Leading Worship and Glorifying God Through Song</p>
+          <p className="lead">
+            Leading Worship and Glorifying God Through Song
+          </p>
         </div>
       </section>
 
@@ -71,20 +78,23 @@ const MusicMinistry: React.FC = () => {
               data-aos="fade-right"
               data-aos-delay="100"
             >
-              <h2 className="section-title text-start">About the Music Ministry</h2>
+              <h2 className="section-title text-start">
+                About the Music Ministry
+              </h2>
               <p className="lead">
                 The Music Ministry of MUTCU is dedicated to leading the Union in
-                vibrant and spiritually uplifting worship experiences. Comprising
-                various teams including the choir, band, instrumentalists, and
-                praise and worship leaders, this ministry plays a crucial role in
-                creating an atmosphere where members can connect with God through
-                music and song.
+                vibrant and spiritually uplifting worship experiences.
+                Comprising various teams including the choir, band,
+                instrumentalists, and praise and worship leaders, this ministry
+                plays a crucial role in creating an atmosphere where members can
+                connect with God through music and song.
               </p>
               <p>
-                Our goal is to foster a heart of worship and praise among the MUTCU
-                family, ensuring that all musical presentations are excellent and
-                align with the Union&apos;s spiritual goals. We believe that music
-                is a powerful tool for evangelism, edification, and glorifying God.
+                Our goal is to foster a heart of worship and praise among the
+                MUTCU family, ensuring that all musical presentations are
+                excellent and align with the Union&apos;s spiritual goals. We
+                believe that music is a powerful tool for evangelism,
+                edification, and glorifying God.
               </p>
             </div>
             <div
@@ -107,8 +117,8 @@ const MusicMinistry: React.FC = () => {
         <div className="container">
           <h2 className="section-title text-center">Our Musical Ensembles</h2>
           <p className="text-center lead mb-5">
-            Within the Music Ministry, various teams come together to lead MUTCU in
-            worship and praise. Click on the images to see more!
+            Within the Music Ministry, various teams come together to lead MUTCU
+            in worship and praise. Click on the images to see more!
           </p>
 
           <div className="row">
@@ -138,13 +148,16 @@ const MusicMinistry: React.FC = () => {
                   <h3 className="card-title mb-0">Choir</h3>
                 </div>
                 <p>
-                  The MUTCU Choir leads congregational singing and presents special
-                  hymns, and contemporary worship songs. They are dedicated to vocal
-                  excellence and harmonious praise, enhancing our services.
+                  The MUTCU Choir leads congregational singing and presents
+                  special hymns, and contemporary worship songs. They are
+                  dedicated to vocal excellence and harmonious praise, enhancing
+                  our services.
                 </p>
                 <h6>Activities:</h6>
                 <ul>
-                  <li>Weekly rehearsals for Sunday services and special events.</li>
+                  <li>
+                    Weekly rehearsals for Sunday services and special events.
+                  </li>
                   <li>Learning new songs and arrangements.</li>
                   <li>
                     Performing during weekly fellowships and major Union events.
@@ -184,26 +197,27 @@ const MusicMinistry: React.FC = () => {
                   <h3 className="card-title mb-0">Praise and Worship</h3>
                 </div>
                 <p>
-                  The Praise and Worship team leads the congregation in contemporary
-                  worship songs, thriving an energetic and intimate atmosphere of
-                  praise. They are instrumental in engaging the congregation and
-                  facilitating heartfelt worship.
+                  The Praise and Worship team leads the congregation in
+                  contemporary worship songs, thriving an energetic and intimate
+                  atmosphere of praise. They are instrumental in engaging the
+                  congregation and facilitating heartfelt worship.
                 </p>
                 <h6>Activities:</h6>
                 <ul>
                   <li>Vocal practice and harmony training sessions.</li>
                   <li>
-                    Leading praise and worship during weekly fellowships and Sunday
-                    services.
+                    Leading praise and worship during weekly fellowships and
+                    Sunday services.
                   </li>
                   <li>
-                    Preparing worship sets for special events like MULEWO and Praise
-                    Fests.
+                    Preparing worship sets for special events like MULEWO and
+                    Praise Fests.
                   </li>
                 </ul>
                 <p className="mb-0 text-muted">
-                  <i className="fas fa-clock me-2"></i> <b>Meeting Times:</b>Tuesday,
-                  7:00 PM - 9:00 PM (Tuition Block) - Other times confirmed weekly.
+                  <i className="fas fa-clock me-2"></i> <b>Meeting Times:</b>
+                  Tuesday, 7:00 PM - 9:00 PM (Tuition Block) - Other times
+                  confirmed weekly.
                 </p>
               </div>
             </div>
@@ -234,24 +248,26 @@ const MusicMinistry: React.FC = () => {
                   <h3 className="card-title mb-0">Band</h3>
                 </div>
                 <p>
-                  The MUTCU Band forms the core instrumental support for our worship
-                  services. This team provides the primary rhythm and melodic
-                  foundation for the Praise and Worship team, creating a powerful
-                  sound for corporate worship.
+                  The MUTCU Band forms the core instrumental support for our
+                  worship services. This team provides the primary rhythm and
+                  melodic foundation for the Praise and Worship team, creating a
+                  powerful sound for corporate worship.
                 </p>
                 <h6>Activities:</h6>
                 <ul>
                   <li>Regular practice sessions for band members.</li>
                   <li>
-                    Providing instrumental backing for the Praise and Worship team.
+                    Providing instrumental backing for the Praise and Worship
+                    team.
                   </li>
                   <li>
                     Performing during weekly fellowships and special events.
                   </li>
                 </ul>
                 <p className="mb-0 text-muted">
-                  <i className="fas fa-clock me-2"></i> <b>Meeting Times:</b>Thursday,
-                  7:00 PM - 9:00 PM (Music Room) - Other times confirmed weekly.
+                  <i className="fas fa-clock me-2"></i> <b>Meeting Times:</b>
+                  Thursday, 7:00 PM - 9:00 PM (Music Room) - Other times
+                  confirmed weekly.
                 </p>
               </div>
             </div>
@@ -289,14 +305,16 @@ const MusicMinistry: React.FC = () => {
                 <h6>Activities:</h6>
                 <ul>
                   <li>
-                    Providing music for smaller fellowships or special occasions.
+                    Providing music for smaller fellowships or special
+                    occasions.
                   </li>
                   <li>Collaborating with other ministries for events.</li>
                   <li>Mentoring aspiring musicians in the Union.</li>
                 </ul>
                 <p className="mb-0 text-muted">
-                  <i className="fas fa-clock me-2"></i> <b>Meeting Times:</b>Wednesdays,
-                  7:00 PM - 9:00 PM (Room 15) - Other times confirmed weekly.
+                  <i className="fas fa-clock me-2"></i> <b>Meeting Times:</b>
+                  Wednesdays, 7:00 PM - 9:00 PM (Room 15) - Other times
+                  confirmed weekly.
                 </p>
               </div>
             </div>
@@ -307,7 +325,9 @@ const MusicMinistry: React.FC = () => {
       {/* Key Events */}
       <section className="py-5 key-events-section text-white">
         <div className="container">
-          <h2 className="section-title text-center text-white">Featured Events</h2>
+          <h2 className="section-title text-center text-white">
+            Featured Events
+          </h2>
           <p className="text-center lead mb-5 text-white-50">
             The Music Ministry plays a vital role in some of MUTCU&apos;s most
             anticipated events.
@@ -323,12 +343,12 @@ const MusicMinistry: React.FC = () => {
                 <h4 className="card-title">Praise Fest</h4>
                 <p>
                   A special service dedicated to high-energy praise and worship,
-                  featuring ministrations from all Music Ministry teams. It&apos;s a
-                  powerful time of corporate worship.
+                  featuring ministrations from all Music Ministry teams.
+                  It&apos;s a powerful time of corporate worship.
                 </p>
                 <p className="mb-0 text-muted">
-                  <i className="fas fa-calendar-alt me-2"></i> Next Date: 7th November
-                  (as per program)
+                  <i className="fas fa-calendar-alt me-2"></i> Next Date: 7th
+                  November (as per program)
                 </p>
               </div>
             </div>
@@ -341,14 +361,14 @@ const MusicMinistry: React.FC = () => {
                 <i className="fas fa-holly-berry event-icon mb-3"></i>
                 <h4 className="card-title">Christmas Cantata</h4>
                 <p>
-                  A collaborative worship experience, often with the Creative Arts
-                  Ministry, celebrating the birth of Jesus through a blend of music,
-                  drama, and other creative expressions. A highlight of the spiritual
-                  year.
+                  A collaborative worship experience, often with the Creative
+                  Arts Ministry, celebrating the birth of Jesus through a blend
+                  of music, drama, and other creative expressions. A highlight
+                  of the spiritual year.
                 </p>
                 <p className="mb-0 text-muted">
-                  <i className="fas fa-calendar-alt me-2"></i> Next Date: 12th December
-                  (as per program)
+                  <i className="fas fa-calendar-alt me-2"></i> Next Date: 12th
+                  December (as per program)
                 </p>
               </div>
             </div>
@@ -361,13 +381,13 @@ const MusicMinistry: React.FC = () => {
                 <i className="fas fa-hand-holding-heart event-icon mb-3"></i>
                 <h4 className="card-title">Worship Experiences</h4>
                 <p>
-                  Special worship services held throughout the semester, providing
-                  opportunities for members to engage in deep spiritual worship and
-                  connect with God through music.
+                  Special worship services held throughout the semester,
+                  providing opportunities for members to engage in deep
+                  spiritual worship and connect with God through music.
                 </p>
                 <p className="mb-0 text-muted">
-                  <i className="fas fa-calendar-alt me-2"></i> Frequency: Weekly (Friday
-                  Services)
+                  <i className="fas fa-calendar-alt me-2"></i> Frequency: Weekly
+                  (Friday Services)
                 </p>
               </div>
             </div>
@@ -377,10 +397,7 @@ const MusicMinistry: React.FC = () => {
 
       {/* Leadership Spotlight */}
       <section className="py-5 leadership-spotlight-section text-white">
-        <div
-          className="container text-center"
-          data-aos="zoom-in"
-        >
+        <div className="container text-center" data-aos="zoom-in">
           <h2 className="section-title text-white">Ministry Leadership</h2>
           <p className="lead mb-4 text-white-50">
             Guided by dedicated leadership, our Music Ministry thrives.
@@ -409,14 +426,11 @@ const MusicMinistry: React.FC = () => {
 
       {/* Call to Action (opens modal) */}
       <section className="py-5 cta-section text-white">
-        <div
-          className="container text-center"
-          data-aos="zoom-in"
-        >
+        <div className="container text-center" data-aos="zoom-in">
           <h2 className="section-title text-white">Join Our Music Ministry!</h2>
           <p className="lead mb-4 text-white-50">
-            If you have a passion for worship through music, we invite you to join
-            the Music Ministry. Click below to express your interest!
+            If you have a passion for worship through music, we invite you to
+            join the Music Ministry. Click below to express your interest!
           </p>
           <button
             type="button"
@@ -440,10 +454,7 @@ const MusicMinistry: React.FC = () => {
         <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content">
             <div className="modal-header bg-primary-dark text-white">
-              <h5
-                className="modal-title"
-                id="joinMinistryModalLabel"
-              >
+              <h5 className="modal-title" id="joinMinistryModalLabel">
                 Join Music Ministry
               </h5>
               <button
@@ -455,8 +466,8 @@ const MusicMinistry: React.FC = () => {
             </div>
             <div className="modal-body">
               <p className="text-center mb-4">
-                Fill out the form below to express your interest in joining the Music
-                Ministry. We'll get in touch with you shortly!
+                Fill out the form below to express your interest in joining the
+                Music Ministry. We'll get in touch with you shortly!
               </p>
               <form
                 id="musicMinistryJoinForm"
@@ -464,10 +475,7 @@ const MusicMinistry: React.FC = () => {
                 noValidate
               >
                 <div className="mb-3">
-                  <label
-                    htmlFor="joinName"
-                    className="form-label"
-                  >
+                  <label htmlFor="joinName" className="form-label">
                     Your Full Name
                   </label>
                   <input
@@ -482,10 +490,7 @@ const MusicMinistry: React.FC = () => {
                   </div>
                 </div>
                 <div className="mb-3">
-                  <label
-                    htmlFor="joinEmail"
-                    className="form-label"
-                  >
+                  <label htmlFor="joinEmail" className="form-label">
                     Your Email
                   </label>
                   <input
@@ -500,22 +505,11 @@ const MusicMinistry: React.FC = () => {
                   </div>
                 </div>
                 <div className="mb-3">
-                  <label
-                    htmlFor="joinInterest"
-                    className="form-label"
-                  >
+                  <label htmlFor="joinInterest" className="form-label">
                     Area of Interest
                   </label>
-                  <select
-                    className="form-select"
-                    id="joinInterest"
-                    required
-                  >
-                    <option
-                      value=""
-                      disabled
-                      selected
-                    >
+                  <select className="form-select" id="joinInterest" required>
+                    <option value="" disabled selected>
                       Select an area
                     </option>
                     <option value="choir">Choir </option>
@@ -529,10 +523,7 @@ const MusicMinistry: React.FC = () => {
                   </div>
                 </div>
                 <div className="mb-3">
-                  <label
-                    htmlFor="joinMessage"
-                    className="form-label"
-                  >
+                  <label htmlFor="joinMessage" className="form-label">
                     Tell us about your musical experience or passion (Optional)
                   </label>
                   <textarea
@@ -543,10 +534,7 @@ const MusicMinistry: React.FC = () => {
                   ></textarea>
                 </div>
                 <div className="d-grid gap-2">
-                  <button
-                    type="submit"
-                    className="btn btn-primary"
-                  >
+                  <button type="submit" className="btn btn-primary">
                     Submit Interest
                   </button>
                 </div>
@@ -578,10 +566,7 @@ const MusicMinistry: React.FC = () => {
         <div className="modal-dialog modal-dialog-centered modal-xl">
           <div className="modal-content">
             <div className="modal-header">
-              <h5
-                className="modal-title"
-                id="imageModal1Label"
-              >
+              <h5 className="modal-title" id="imageModal1Label">
                 MUTCU Choir
               </h5>
               <button
@@ -612,10 +597,7 @@ const MusicMinistry: React.FC = () => {
         <div className="modal-dialog modal-dialog-centered modal-xl">
           <div className="modal-content">
             <div className="modal-header">
-              <h5
-                className="modal-title"
-                id="imageModal2Label"
-              >
+              <h5 className="modal-title" id="imageModal2Label">
                 MUTCU Praise and Worship
               </h5>
               <button
@@ -646,10 +628,7 @@ const MusicMinistry: React.FC = () => {
         <div className="modal-dialog modal-dialog-centered modal-xl">
           <div className="modal-content">
             <div className="modal-header">
-              <h5
-                className="modal-title"
-                id="imageModal3Label"
-              >
+              <h5 className="modal-title" id="imageModal3Label">
                 MUTCU Band
               </h5>
               <button
@@ -680,10 +659,7 @@ const MusicMinistry: React.FC = () => {
         <div className="modal-dialog modal-dialog-centered modal-xl">
           <div className="modal-content">
             <div className="modal-header">
-              <h5
-                className="modal-title"
-                id="imageModal4Label"
-              >
+              <h5 className="modal-title" id="imageModal4Label">
                 MUTCU Instrumentalists
               </h5>
               <button

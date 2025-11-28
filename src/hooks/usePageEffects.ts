@@ -29,7 +29,8 @@ export const usePageEffects = () => {
 
     // Smooth scrolling for in-page anchors (#...)
     const anchorSelector = "a.nav-link[href^='#'], .btn[href^='#']";
-    const anchors = document.querySelectorAll<HTMLAnchorElement>(anchorSelector);
+    const anchors =
+      document.querySelectorAll<HTMLAnchorElement>(anchorSelector);
 
     const onAnchorClick = (e: Event) => {
       const target = e.currentTarget as HTMLAnchorElement;

@@ -12,11 +12,7 @@ const MissionsEvangelism: React.FC = () => {
         <div className="hero-overlay"></div>
         <div className="container">
           <h1 data-aos="fade-up">MUTCU Missions &amp; Evangelism Ministry</h1>
-          <p
-            className="lead"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
+          <p className="lead" data-aos="fade-up" data-aos-delay="100">
             Spreading the Gospel and Serving Communities
           </p>
         </div>

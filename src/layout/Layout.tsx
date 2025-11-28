@@ -18,7 +18,10 @@ const Layout: React.FC = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-dark fixed-top" aria-label="Main navigation">
+      <nav
+        className="navbar navbar-expand-lg navbar-dark fixed-top"
+        aria-label="Main navigation"
+      >
         <div className="container">
           <NavLink className="navbar-brand" to="/">
             <img src={logoSrc} alt="MUTCU Logo" height={60} />
@@ -88,9 +91,9 @@ const Layout: React.FC = () => {
             <div className="col-md-4 mb-4 mb-md-0">
               <h5 className="footer-title">About MUTCU</h5>
               <p className="footer-text">
-                Murang’a University of Technology Christian Union is a non-denominational
-                community dedicated to inspiring love, hope, and godliness through faith, unity,
-                and service.
+                Murang’a University of Technology Christian Union is a
+                non-denominational community dedicated to inspiring love, hope,
+                and godliness through faith, unity, and service.
               </p>
             </div>
             <div className="col-md-4 mb-4 mb-md-0">
@@ -136,8 +139,8 @@ const Layout: React.FC = () => {
             <div className="col-md-4">
               <h5 className="footer-title">Connect With Us</h5>
               <p className="footer-contact">
-                <i className="fas fa-map-marker-alt me-2"></i> Murang’a University of Technology,
-                Murang’a, Kenya
+                <i className="fas fa-map-marker-alt me-2"></i> Murang’a
+                University of Technology, Murang’a, Kenya
               </p>
               <p className="footer-contact">
                 <i className="fas fa-phone me-2"></i> +254 712 345 678
@@ -146,7 +149,8 @@ const Layout: React.FC = () => {
                 <i className="fas fa-envelope me-2"></i> info@mutcu.ac.ke
               </p>
               <p className="footer-contact">
-                <i className="fas fa-clock me-2"></i> Office Hours: Mon-Fri, 8:00 AM - 5:00 PM
+                <i className="fas fa-clock me-2"></i> Office Hours: Mon-Fri,
+                8:00 AM - 5:00 PM
               </p>
               <div className="social-icons mt-3">
                 <a href="#" className="me-3" aria-label="Facebook">
@@ -163,7 +167,8 @@ const Layout: React.FC = () => {
           </div>
           <div className="text-center mt-5 border-top pt-4">
             <p className="footer-text mb-1">
-              &copy; 2025 Murang’a University of Technology Christian Union. All rights reserved.
+              &copy; 2025 Murang’a University of Technology Christian Union. All
+              rights reserved.
             </p>
             <p className="footer-text">Designed by MUTCU Tech Team</p>
           </div>

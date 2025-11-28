@@ -44,26 +44,47 @@ const App: React.FC = () => {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/committees/chairman" element={<Chairman />} />
-<Route path="/committees/vice-chair1" element={<ViceChair1 />} />
-<Route path="/committees/vice-chair2" element={<ViceChair2 />} />
-<Route path="/committees/secretary" element={<Secretary />} />
-<Route path="/committees/vice-secretary" element={<ViceSecretary />} />
-<Route path="/committees/treasurer" element={<Treasurer />} />
-<Route path="/committees/bible-study" element={<BibleStudyCommittee />} />
-<Route path="/committees/prayer" element={<PrayerCommittee />} />
-<Route path="/committees/missions" element={<MissionsCommittee />} />
-<Route path="/committees/music" element={<MusicCommittee />} />
-<Route path="/committees/technical" element={<TechnicalCommittee />} />
-<Route path="/committees/creative" element={<CreativeCommittee />} />
-       <Route path="/ministries/music-ministry" element={<MusicMinistry />} />
-<Route path="/ministries/bible-study-discipleship" element={<BibleStudyDiscipleship />} />
-<Route path="/ministries/missions-evangelism" element={<MissionsEvangelism />} />
-<Route path="/ministries/creative-arts" element={<CreativeArts />} />
-<Route path="/ministries/prayer-ministry" element={<PrayerMinistry />} />
-<Route path="/ministries/welfare-committee" element={<WelfareCommittee />} />
-<Route path="/ministries/hospitality-ministry" element={<HospitalityMinistry />} />
-<Route path="/ministries/technical-department" element={<TechnicalDepartment />} />
-<Route path="/ministries/RMC" element={<RMC />} />
+        <Route path="/committees/vice-chair1" element={<ViceChair1 />} />
+        <Route path="/committees/vice-chair2" element={<ViceChair2 />} />
+        <Route path="/committees/secretary" element={<Secretary />} />
+        <Route path="/committees/vice-secretary" element={<ViceSecretary />} />
+        <Route path="/committees/treasurer" element={<Treasurer />} />
+        <Route
+          path="/committees/bible-study"
+          element={<BibleStudyCommittee />}
+        />
+        <Route path="/committees/prayer" element={<PrayerCommittee />} />
+        <Route path="/committees/missions" element={<MissionsCommittee />} />
+        <Route path="/committees/music" element={<MusicCommittee />} />
+        <Route path="/committees/technical" element={<TechnicalCommittee />} />
+        <Route path="/committees/creative" element={<CreativeCommittee />} />
+        <Route path="/ministries/music-ministry" element={<MusicMinistry />} />
+        <Route
+          path="/ministries/bible-study-discipleship"
+          element={<BibleStudyDiscipleship />}
+        />
+        <Route
+          path="/ministries/missions-evangelism"
+          element={<MissionsEvangelism />}
+        />
+        <Route path="/ministries/creative-arts" element={<CreativeArts />} />
+        <Route
+          path="/ministries/prayer-ministry"
+          element={<PrayerMinistry />}
+        />
+        <Route
+          path="/ministries/welfare-committee"
+          element={<WelfareCommittee />}
+        />
+        <Route
+          path="/ministries/hospitality-ministry"
+          element={<HospitalityMinistry />}
+        />
+        <Route
+          path="/ministries/technical-department"
+          element={<TechnicalDepartment />}
+        />
+        <Route path="/ministries/RMC" element={<RMC />} />
         {/* You can add sub-routes here for committees/* and ministries/* pages */}
       </Route>
     </Routes>

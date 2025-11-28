@@ -41,11 +41,7 @@ const Chairman: React.FC = () => {
               </div>
             </div>
 
-            <div
-              className="col-lg-8"
-              data-aos="fade-left"
-              data-aos-delay="200"
-            >
+            <div className="col-lg-8" data-aos="fade-left" data-aos-delay="200">
               <h3 className="section-title text-start">
                 About the Chairman&apos;s Office
               </h3>
@@ -74,7 +70,9 @@ const Chairman: React.FC = () => {
       {/* Roles & Responsibilities */}
       <section className="py-5 bg-light roles-responsibilities-section">
         <div className="container">
-          <h2 className="section-title text-center">Key Roles &amp; Responsibilities</h2>
+          <h2 className="section-title text-center">
+            Key Roles &amp; Responsibilities
+          </h2>
           <p className="text-center lead mb-5">
             The Chairman&apos;s office is central to MUTCU&apos;s governance and
             spiritual guidance.
@@ -120,28 +118,17 @@ const Chairman: React.FC = () => {
 
       {/* CTA */}
       <section className="py-5 cta-section text-white">
-        <div
-          className="container text-center"
-          data-aos="zoom-in"
-        >
+        <div className="container text-center" data-aos="zoom-in">
           <h2 className="section-title text-">Join Us in Our Mission!</h2>
           <p className="section-subtitle">
-            Inspired by the leadership of our Chairman, we invite you to be
-            part of MUTCU&apos;s journey.
+            Inspired by the leadership of our Chairman, we invite you to be part
+            of MUTCU&apos;s journey.
           </p>
-          <Link
-            to="/contact"
-            className="btn btn-primary btn-lg me-3"
-          >
-            Connect with Leadership{" "}
-            <i className="fas fa-envelope ms-2"></i>
+          <Link to="/contact" className="btn btn-primary btn-lg me-3">
+            Connect with Leadership <i className="fas fa-envelope ms-2"></i>
           </Link>
-          <Link
-            to="/ministries"
-            className="btn btn-secondary btn-lg"
-          >
-            Explore Ministries{" "}
-            <i className="fas fa-users-cog ms-2"></i>
+          <Link to="/ministries" className="btn btn-secondary btn-lg">
+            Explore Ministries <i className="fas fa-users-cog ms-2"></i>
           </Link>
         </div>
       </section>

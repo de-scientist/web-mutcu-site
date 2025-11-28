@@ -11,12 +11,10 @@ const BibleStudyDiscipleship: React.FC = () => {
       >
         <div className="hero-overlay"></div>
         <div className="container">
-          <h1 data-aos="fade-up">MUTCU Bible Study &amp; Discipleship Ministry</h1>
-          <p
-            className="lead"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
+          <h1 data-aos="fade-up">
+            MUTCU Bible Study &amp; Discipleship Ministry
+          </h1>
+          <p className="lead" data-aos="fade-up" data-aos-delay="100">
             Deepening Faith Through God&apos;s Word and Nurturing Growth
           </p>
         </div>

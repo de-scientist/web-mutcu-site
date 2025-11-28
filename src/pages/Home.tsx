@@ -6,16 +6,24 @@ declare const bootstrap: any;
 
 const Home: React.FC = () => {
   useEffect(() => {
-    const prayerForm = document.getElementById("prayerForm") as HTMLFormElement | null;
-    const newsletterForm = document.getElementById("newsletterForm") as HTMLFormElement | null;
+    const prayerForm = document.getElementById(
+      "prayerForm",
+    ) as HTMLFormElement | null;
+    const newsletterForm = document.getElementById(
+      "newsletterForm",
+    ) as HTMLFormElement | null;
 
     const handlePrayerSubmit = (event: Event) => {
       event.preventDefault();
       const prayerRequestInput = document.getElementById(
-        "prayerRequest"
+        "prayerRequest",
       ) as HTMLTextAreaElement;
-      const modalMessage = document.getElementById("modalMessage") as HTMLElement;
-      const modalElement = document.getElementById("confirmationModal") as HTMLElement;
+      const modalMessage = document.getElementById(
+        "modalMessage",
+      ) as HTMLElement;
+      const modalElement = document.getElementById(
+        "confirmationModal",
+      ) as HTMLElement;
       const confirmationModal = new bootstrap.Modal(modalElement);
 
       if (prayerRequestInput.value.trim() === "") {
@@ -26,7 +34,8 @@ const Home: React.FC = () => {
       }
 
       console.log("Prayer Request Submitted:", {
-        name: (document.getElementById("prayerName") as HTMLInputElement)?.value,
+        name: (document.getElementById("prayerName") as HTMLInputElement)
+          ?.value,
         request: prayerRequestInput.value,
       });
 
@@ -39,10 +48,14 @@ const Home: React.FC = () => {
     const handleNewsletterSubmit = (event: Event) => {
       event.preventDefault();
       const newsletterEmailInput = document.getElementById(
-        "newsletterEmail"
+        "newsletterEmail",
       ) as HTMLInputElement;
-      const modalMessage = document.getElementById("modalMessage") as HTMLElement;
-      const modalElement = document.getElementById("confirmationModal") as HTMLElement;
+      const modalMessage = document.getElementById(
+        "modalMessage",
+      ) as HTMLElement;
+      const modalElement = document.getElementById(
+        "confirmationModal",
+      ) as HTMLElement;
       const confirmationModal = new bootstrap.Modal(modalElement);
 
       const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -164,12 +177,10 @@ const Home: React.FC = () => {
                     to="/ministries"
                     className="btn btn-primary btn-lg me-3"
                   >
-                    Explore Ministries{" "}
-                    <i className="fas fa-users-cog ms-2"></i>
+                    Explore Ministries <i className="fas fa-users-cog ms-2"></i>
                   </Link>
                   <Link to="/events" className="btn btn-secondary btn-lg">
-                    Join an Event{" "}
-                    <i className="fas fa-calendar-alt ms-2"></i>
+                    Join an Event <i className="fas fa-calendar-alt ms-2"></i>
                   </Link>
                 </div>
               </div>
@@ -201,8 +212,7 @@ const Home: React.FC = () => {
                   data-aos="zoom-in"
                   data-aos-delay="400"
                 >
-                  Our vision is to be a model Christian Union impacting
-                  society.
+                  Our vision is to be a model Christian Union impacting society.
                 </p>
                 <div data-aos="zoom-in" data-aos-delay="600">
                   <Link to="/about" className="btn btn-primary btn-lg me-3">
@@ -273,8 +283,7 @@ const Home: React.FC = () => {
                 data-aos="zoom-in"
                 data-aos-delay="300"
               >
-                Learn More About Us{" "}
-                <i className="fas fa-info-circle ms-2"></i>
+                Learn More About Us <i className="fas fa-info-circle ms-2"></i>
               </Link>
             </div>
             <div
@@ -314,10 +323,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Core Values Section */}
-      <section
-        className="core-values-section py-5"
-        data-aos="fade-up"
-      >
+      <section className="core-values-section py-5" data-aos="fade-up">
         <div className="container">
           <h2 className="section-title text-center text-white">
             Our Core Values
@@ -427,10 +433,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Ministries Preview */}
-      <section
-        className="ministries-section py-5"
-        data-aos="fade-up"
-      >
+      <section className="ministries-section py-5" data-aos="fade-up">
         <div className="container">
           <h2 className="section-title text-center">Our Ministries</h2>
           <p className="text-center lead mb-5">
@@ -539,8 +542,8 @@ const Home: React.FC = () => {
                   <i className="fas fa-paint-brush feature-icon mb-2"></i>
                   <h4 className="card-title">Creative Ministry</h4>
                   <p className="card-text">
-                    Expressing faith through drama, dance, spoken
-                    word,modelling and other artistic talents.
+                    Expressing faith through drama, dance, spoken word,modelling
+                    and other artistic talents.
                   </p>
                   <Link
                     to="/ministries"
@@ -557,10 +560,7 @@ const Home: React.FC = () => {
             data-aos="zoom-in"
             data-aos-delay="500"
           >
-            <Link
-              to="/ministries"
-              className="btn btn-secondary btn-lg"
-            >
+            <Link to="/ministries" className="btn btn-secondary btn-lg">
               View All Ministries <i className="fas fa-arrow-right ms-2"></i>
             </Link>
           </div>
@@ -568,10 +568,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Upcoming Events */}
-      <section
-        className="events-section py-5 bg-light"
-        data-aos="fade-up"
-      >
+      <section className="events-section py-5 bg-light" data-aos="fade-up">
         <div className="container">
           <h2 className="section-title text-center">Upcoming Events</h2>
           <p className="text-center lead mb-5">
@@ -603,10 +600,7 @@ const Home: React.FC = () => {
                   <p className="card-text">
                     Join us for a night of intercession and spiritual revival.
                   </p>
-                  <Link
-                    to="/events"
-                    className="btn btn-primary btn-sm mt-2"
-                  >
+                  <Link to="/events" className="btn btn-primary btn-sm mt-2">
                     Details &amp; RSVP
                   </Link>
                 </div>
@@ -638,10 +632,7 @@ const Home: React.FC = () => {
                     Celebrate our God through our Music Ministry in a lively
                     evening of praise and worship.
                   </p>
-                  <Link
-                    to="/events"
-                    className="btn btn-primary btn-sm mt-2"
-                  >
+                  <Link to="/events" className="btn btn-primary btn-sm mt-2">
                     Details &amp; RSVP
                   </Link>
                 </div>
@@ -674,10 +665,7 @@ const Home: React.FC = () => {
                     Beauty though special ministrations and performance by our
                     Creative Arts Ministry (CREAM).
                   </p>
-                  <Link
-                    to="/events"
-                    className="btn btn-primary btn-sm mt-2"
-                  >
+                  <Link to="/events" className="btn btn-primary btn-sm mt-2">
                     Details &amp; RSVP
                   </Link>
                 </div>
@@ -689,10 +677,7 @@ const Home: React.FC = () => {
             data-aos="zoom-in"
             data-aos-delay="400"
           >
-            <Link
-              to="/events"
-              className="btn btn-secondary btn-lg"
-            >
+            <Link to="/events" className="btn btn-secondary btn-lg">
               View All Events <i className="fas fa-arrow-right ms-2"></i>
             </Link>
           </div>
@@ -704,8 +689,8 @@ const Home: React.FC = () => {
         <div className="container">
           <h2 className="section-title text-center">Need Prayers?</h2>
           <p className="text-center lead mb-5">
-            Our Prayer Ministry is here to support you in faith and intercession.
-            Submit your requests confidentially.
+            Our Prayer Ministry is here to support you in faith and
+            intercession. Submit your requests confidentially.
           </p>
           <div className="row justify-content-center">
             <div
@@ -713,15 +698,9 @@ const Home: React.FC = () => {
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <form
-                id="prayerForm"
-                className="p-4 rounded-3 shadow-lg"
-              >
+              <form id="prayerForm" className="p-4 rounded-3 shadow-lg">
                 <div className="mb-4">
-                  <label
-                    htmlFor="prayerName"
-                    className="form-label"
-                  >
+                  <label htmlFor="prayerName" className="form-label">
                     Your Name (Optional)
                   </label>
                   <input
@@ -731,18 +710,12 @@ const Home: React.FC = () => {
                     placeholder="Enter your name"
                     aria-describedby="prayerNameHelp"
                   />
-                  <div
-                    id="prayerNameHelp"
-                    className="form-text"
-                  >
+                  <div id="prayerNameHelp" className="form-text">
                     You may submit anonymously if preferred.
                   </div>
                 </div>
                 <div className="mb-4">
-                  <label
-                    htmlFor="prayerRequest"
-                    className="form-label"
-                  >
+                  <label htmlFor="prayerRequest" className="form-label">
                     Prayer Request <span className="text-danger">*</span>
                   </label>
                   <textarea
@@ -753,20 +726,13 @@ const Home: React.FC = () => {
                     required
                     aria-describedby="prayerRequestError"
                   ></textarea>
-                  <div
-                    id="prayerRequestError"
-                    className="invalid-feedback"
-                  >
+                  <div id="prayerRequestError" className="invalid-feedback">
                     Please enter your prayer request.
                   </div>
                 </div>
                 <div className="d-grid">
-                  <button
-                    type="submit"
-                    className="btn btn-primary btn-lg"
-                  >
-                    Submit Request{" "}
-                    <i className="fas fa-paper-plane ms-2"></i>
+                  <button type="submit" className="btn btn-primary btn-lg">
+                    Submit Request <i className="fas fa-paper-plane ms-2"></i>
                   </button>
                 </div>
               </form>
@@ -776,14 +742,9 @@ const Home: React.FC = () => {
       </section>
 
       {/* Testimonials */}
-      <section
-        className="testimonials-section py-5"
-        data-aos="fade-up"
-      >
+      <section className="testimonials-section py-5" data-aos="fade-up">
         <div className="container">
-          <h2 className="section-title text-center">
-            What Our Members Say
-          </h2>
+          <h2 className="section-title text-center">What Our Members Say</h2>
           <p className="text-center lead mb-5 text-50">
             Hear from our Members about their MUTCU experience.
           </p>
@@ -841,9 +802,7 @@ const Home: React.FC = () => {
                     communities. It was a life-changing experience.”
                   </p>
                   <p className="mt-4">
-                    <strong>
-                      – Grace Akinyi, Medical Lab, 2nd Year
-                    </strong>
+                    <strong>– Grace Akinyi, Medical Lab, 2nd Year</strong>
                   </p>
                 </div>
               </div>
@@ -980,10 +939,7 @@ const Home: React.FC = () => {
             data-aos="zoom-in"
             data-aos-delay="500"
           >
-            <Link
-              to="/gallery"
-              className="btn btn-secondary btn-lg"
-            >
+            <Link to="/gallery" className="btn btn-secondary btn-lg">
               View Full Gallery <i className="fas fa-images ms-2"></i>
             </Link>
           </div>
@@ -1007,15 +963,9 @@ const Home: React.FC = () => {
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <form
-                id="newsletterForm"
-                className="p-4 rounded-3 shadow-lg"
-              >
+              <form id="newsletterForm" className="p-4 rounded-3 shadow-lg">
                 <div className="mb-4">
-                  <label
-                    htmlFor="newsletterEmail"
-                    className="form-label text"
-                  >
+                  <label htmlFor="newsletterEmail" className="form-label text">
                     Email Address <span className="text-warning">*</span>
                   </label>
                   <input
@@ -1026,20 +976,13 @@ const Home: React.FC = () => {
                     required
                     aria-describedby="newsletterEmailError"
                   />
-                  <div
-                    id="newsletterEmailError"
-                    className="invalid-feedback"
-                  >
+                  <div id="newsletterEmailError" className="invalid-feedback">
                     Please enter a valid email address.
                   </div>
                 </div>
                 <div className="d-grid">
-                  <button
-                    type="submit"
-                    className="btn btn-primary btn-lg"
-                  >
-                    Subscribe{" "}
-                    <i className="fas fa-envelope-open-text ms-2"></i>
+                  <button type="submit" className="btn btn-primary btn-lg">
+                    Subscribe <i className="fas fa-envelope-open-text ms-2"></i>
                   </button>
                 </div>
               </form>

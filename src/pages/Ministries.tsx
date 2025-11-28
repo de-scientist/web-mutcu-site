@@ -83,9 +83,7 @@ const Ministries: React.FC = () => {
                 />
                 <div className="card-body">
                   <i className="fas fa-book-open feature-icon mb-3"></i>
-                  <h4 className="card-title">
-                    Bible Study &amp; Discipleship
-                  </h4>
+                  <h4 className="card-title">Bible Study &amp; Discipleship</h4>
                   <p className="card-text">
                     Deepening faith through small groups, nurturing classes for
                     new believers, and intensive training programs.
@@ -143,9 +141,7 @@ const Ministries: React.FC = () => {
                 />
                 <div className="card-body">
                   <i className="fas fa-paint-brush feature-icon mb-3"></i>
-                  <h4 className="card-title">
-                    Creative Arts Ministry (CREAM)
-                  </h4>
+                  <h4 className="card-title">Creative Arts Ministry (CREAM)</h4>
                   <p className="card-text">
                     Expressing faith through drama, dance, spoken word, and
                     other artistic talents.
@@ -311,10 +307,7 @@ const Ministries: React.FC = () => {
 
       {/* Call to Action Section */}
       <section className="py-5 cta-section text-white">
-        <div
-          className="container text-center"
-          data-aos="zoom-in"
-        >
+        <div className="container text-center" data-aos="zoom-in">
           <h2 className="section-title text-white">
             Find Your Place to Serve!
           </h2>
@@ -322,18 +315,11 @@ const Ministries: React.FC = () => {
             There&apos;s a ministry for every passion and gift. Join us in
             making a difference.
           </p>
-          <Link
-            to="/contact"
-            className="btn btn-primary btn-lg me-3"
-          >
+          <Link to="/contact" className="btn btn-primary btn-lg me-3">
             Get Involved <i className="fas fa-hand-fist ms-2"></i>
           </Link>
-          <Link
-            to="/about"
-            className="btn btn-secondary btn-lg"
-          >
-            Learn About Leadership{" "}
-            <i className="fas fa-users-gear ms-2"></i>
+          <Link to="/about" className="btn btn-secondary btn-lg">
+            Learn About Leadership <i className="fas fa-users-gear ms-2"></i>
           </Link>
         </div>
       </section>

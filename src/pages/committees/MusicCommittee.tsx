@@ -12,7 +12,9 @@ const MusicCommittee: React.FC = () => {
         <div className="hero-overlay"></div>
         <div className="container">
           <h1 className="display-3 mb-3">MUTCU Music Ministry</h1>
-          <p className="lead">Leading Worship and Glorifying God Through Song</p>
+          <p className="lead">
+            Leading Worship and Glorifying God Through Song
+          </p>
         </div>
       </section>
 

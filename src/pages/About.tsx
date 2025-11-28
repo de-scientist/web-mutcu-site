@@ -53,8 +53,8 @@ const About: React.FC = () => {
                 accountability. This affiliation ensures our activities are
                 theologically sound, well-guided, and contribute to broader
                 Christian initiatives. Our identity and all functions are
-                meticulously guided by a comprehensive constitution and
-                detailed operational policies for each ministry.
+                meticulously guided by a comprehensive constitution and detailed
+                operational policies for each ministry.
               </p>
             </div>
             <div
@@ -291,90 +291,57 @@ const About: React.FC = () => {
                   believes in and holds to the following fundamental truths:
                 </p>
                 <ul className="list-unstyled doctrinal-list">
-                  <li
-                    data-aos="fade-right"
-                    data-aos-delay="200"
-                  >
+                  <li data-aos="fade-right" data-aos-delay="200">
                     <i className="fas fa-check-circle me-2"></i> The unity of
                     the Father, the Son and the Holy Spirit in the Godhead.
                   </li>
-                  <li
-                    data-aos="fade-right"
-                    data-aos-delay="300"
-                  >
+                  <li data-aos="fade-right" data-aos-delay="300">
                     <i className="fas fa-check-circle me-2"></i> The sovereignty
                     of God in creation, revelation, redemption and final
                     judgment.
                   </li>
-                  <li
-                    data-aos="fade-right"
-                    data-aos-delay="400"
-                  >
+                  <li data-aos="fade-right" data-aos-delay="400">
                     <i className="fas fa-check-circle me-2"></i> The divine
                     inspiration and infallibility of the Holy Scripture as
                     originally given, and its supreme authority in all matters
                     of faith and conduct.
                   </li>
-                  <li
-                    data-aos="fade-right"
-                    data-aos-delay="500"
-                  >
+                  <li data-aos="fade-right" data-aos-delay="500">
                     <i className="fas fa-check-circle me-2"></i> The universal
                     sinfulness and guilt of all men since the fall, rendering
                     them subject to God’s wrath and condemnation.
                   </li>
-                  <li
-                    data-aos="fade-right"
-                    data-aos-delay="600"
-                  >
+                  <li data-aos="fade-right" data-aos-delay="600">
                     <i className="fas fa-check-circle me-2"></i> Redemption from
                     the guilt, penalty, dominion and pollution of sin, solely
                     through the sacrificial death (as our representative and
                     substitute) of the Lord Jesus Christ, the incarnate Son of
                     God.
                   </li>
-                  <li
-                    data-aos="fade-right"
-                    data-aos-delay="700"
-                  >
+                  <li data-aos="fade-right" data-aos-delay="700">
                     <i className="fas fa-check-circle me-2"></i> The bodily
                     resurrection of the Lord Jesus Christ from the dead and His
                     ascension to the right hand of God the Father.
                   </li>
-                  <li
-                    data-aos="fade-right"
-                    data-aos-delay="800"
-                  >
+                  <li data-aos="fade-right" data-aos-delay="800">
                     <i className="fas fa-check-circle me-2"></i> The presence
                     and power of the Holy Spirit in the work of regeneration.
                   </li>
-                  <li
-                    data-aos="fade-right"
-                    data-aos-delay="900"
-                  >
+                  <li data-aos="fade-right" data-aos-delay="900">
                     <i className="fas fa-check-circle me-2"></i> The
                     justification of the sinner by grace alone through faith
                     alone.
                   </li>
-                  <li
-                    data-aos="fade-right"
-                    data-aos-delay="1000"
-                  >
+                  <li data-aos="fade-right" data-aos-delay="1000">
                     <i className="fas fa-check-circle me-2"></i> The indwelling
                     and work of the Holy Spirit in the believer.
                   </li>
-                  <li
-                    data-aos="fade-right"
-                    data-aos-delay="1100"
-                  >
+                  <li data-aos="fade-right" data-aos-delay="1100">
                     <i className="fas fa-check-circle me-2"></i> The one Holy
                     Universal Church which is the Body of Christ and to which
                     all true believers belong.
                   </li>
-                  <li
-                    data-aos="fade-right"
-                    data-aos-delay="1200"
-                  >
+                  <li data-aos="fade-right" data-aos-delay="1200">
                     <i className="fas fa-check-circle me-2"></i> The expectation
                     of the personal, visible return of the Lord Jesus Christ.
                   </li>
@@ -644,7 +611,9 @@ const About: React.FC = () => {
                   className="img-fluid rounded-circle mb-3 border border-3 border-orange"
                 />
                 <h4 className="member-name">Yusuf Muchiri</h4>
-                <p className="member-role">Missions &amp; Evangelism Coordinator</p>
+                <p className="member-role">
+                  Missions &amp; Evangelism Coordinator
+                </p>
               </Link>
             </div>
             {/* Music Coordinator */}
@@ -813,19 +782,11 @@ const About: React.FC = () => {
             data-aos="zoom-in"
             data-aos-delay="700"
           >
-            <Link
-              to="/contact"
-              className="btn btn-primary btn-lg me-3"
-            >
-              Join MUTCU Today!{" "}
-              <i className="fas fa-user-plus ms-2"></i>
+            <Link to="/contact" className="btn btn-primary btn-lg me-3">
+              Join MUTCU Today! <i className="fas fa-user-plus ms-2"></i>
             </Link>
-            <Link
-              to="/ministries"
-              className="btn btn-secondary btn-lg"
-            >
-              Explore Ministries{" "}
-              <i className="fas fa-users-cog ms-2"></i>
+            <Link to="/ministries" className="btn btn-secondary btn-lg">
+              Explore Ministries <i className="fas fa-users-cog ms-2"></i>
             </Link>
           </div>
         </div>

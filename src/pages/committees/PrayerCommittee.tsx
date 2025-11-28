@@ -42,11 +42,7 @@ const PrayerCommittee: React.FC = () => {
                 <p className="member-role">Prayer Coordinator</p>
               </div>
             </div>
-            <div
-              className="col-lg-8"
-              data-aos="fade-left"
-              data-aos-delay="200"
-            >
+            <div className="col-lg-8" data-aos="fade-left" data-aos-delay="200">
               <h3 className="section-title text-start">
                 About the Prayer Ministry
               </h3>
@@ -73,7 +69,9 @@ const PrayerCommittee: React.FC = () => {
       {/* Roles */}
       <section className="py-5 bg-light roles-responsibilities-section">
         <div className="container">
-          <h2 className="section-title text-center">Key Roles &amp; Activities</h2>
+          <h2 className="section-title text-center">
+            Key Roles &amp; Activities
+          </h2>
           <p className="text-center lead mb-5">
             The Prayer Ministry leads MUTCU in seeking God&apos;s face.
           </p>
@@ -110,28 +108,18 @@ const PrayerCommittee: React.FC = () => {
 
       {/* CTA */}
       <section className="py-5 cta-section text-white">
-        <div
-          className="container text-center"
-          data-aos="zoom-in"
-        >
+        <div className="container text-center" data-aos="zoom-in">
           <h2 className="section-title ">Join Us in Prayer!</h2>
           <p className="section-title">
             Submit your prayer requests or join our prayer meetings to
             experience God&apos;s power.
           </p>
-          <Link
-            to="/contact"
-            className="btn btn-primary btn-lg me-3"
-          >
+          <Link to="/contact" className="btn btn-primary btn-lg me-3">
             Submit Prayer Request{" "}
             <i className="fas fa-hand-holding-heart ms-2"></i>
           </Link>
-          <Link
-            to="/events"
-            className="btn btn-secondary btn-lg"
-          >
-            View Prayer Events{" "}
-            <i className="fas fa-calendar-alt ms-2"></i>
+          <Link to="/events" className="btn btn-secondary btn-lg">
+            View Prayer Events <i className="fas fa-calendar-alt ms-2"></i>
           </Link>
         </div>
       </section>

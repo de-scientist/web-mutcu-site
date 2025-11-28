@@ -40,11 +40,7 @@ const ViceChair2: React.FC = () => {
                 <p className="member-role">2nd Vice Chair</p>
               </div>
             </div>
-            <div
-              className="col-lg-8"
-              data-aos="fade-left"
-              data-aos-delay="200"
-            >
+            <div className="col-lg-8" data-aos="fade-left" data-aos-delay="200">
               <h3 className="section-title text-start">
                 About the 2nd Vice Chair&apos;s Office
               </h3>
@@ -71,7 +67,9 @@ const ViceChair2: React.FC = () => {
       {/* Roles */}
       <section className="py-5 bg-light roles-responsibilities-section">
         <div className="container">
-          <h2 className="section-title text-center">Key Roles &amp; Responsibilities</h2>
+          <h2 className="section-title text-center">
+            Key Roles &amp; Responsibilities
+          </h2>
           <p className="text-center lead mb-5">
             The 2nd Vice Chair provides crucial support to the Executive
             leadership.
@@ -108,24 +106,15 @@ const ViceChair2: React.FC = () => {
 
       {/* CTA */}
       <section className="py-5 cta-section text-white">
-        <div
-          className="container text-center"
-          data-aos="zoom-in"
-        >
+        <div className="container text-center" data-aos="zoom-in">
           <h2 className="section-title ">Explore Our Leadership!</h2>
           <p className="section-title">
             Learn more about the dedicated individuals guiding MUTCU.
           </p>
-          <Link
-            to="/about"
-            className="btn btn-primary btn-lg me-3"
-          >
+          <Link to="/about" className="btn btn-primary btn-lg me-3">
             Meet the Team <i className="fas fa-users ms-2"></i>
           </Link>
-          <Link
-            to="/contact"
-            className="btn btn-secondary btn-lg"
-          >
+          <Link to="/contact" className="btn btn-secondary btn-lg">
             Get in Touch <i className="fas fa-envelope ms-2"></i>
           </Link>
         </div>
