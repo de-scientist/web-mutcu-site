@@ -55,6 +55,15 @@ const App: React.FC = () => {
 <Route path="/committees/music" element={<MusicCommittee />} />
 <Route path="/committees/technical" element={<TechnicalCommittee />} />
 <Route path="/committees/creative" element={<CreativeCommittee />} />
+       <Route path="/ministries/music-ministry" element={<MusicMinistry />} />
+<Route path="/ministries/bible-study-discipleship" element={<BibleStudyDiscipleship />} />
+<Route path="/ministries/missions-evangelism" element={<MissionsEvangelism />} />
+<Route path="/ministries/creative-arts" element={<CreativeArts />} />
+<Route path="/ministries/prayer-ministry" element={<PrayerMinistry />} />
+<Route path="/ministries/welfare-committee" element={<WelfareCommittee />} />
+<Route path="/ministries/hospitality-ministry" element={<HospitalityMinistry />} />
+<Route path="/ministries/technical-department" element={<TechnicalDepartment />} />
+<Route path="/ministries/RMC" element={<RMC />} />
         {/* You can add sub-routes here for committees/* and ministries/* pages */}
       </Route>
     </Routes>
