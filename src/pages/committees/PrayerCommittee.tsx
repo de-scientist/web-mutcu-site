@@ -16,7 +16,7 @@ const PrayerCommittee: React.FC = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          <h1 className="display-3 mb-3">Prayer Ministry</hh1>
+          <h1 className="display-3 mb-3">Prayer Ministry</h1>
           <p className="lead">
             Building a Culture of Intercession and Spiritual Dependence
           </p>
